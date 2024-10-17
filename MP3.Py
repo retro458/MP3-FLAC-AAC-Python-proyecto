@@ -24,7 +24,7 @@ Label(root, text='Formato de salida:', font=('Times New Roman', 15, 'bold'), bg=
 ttk.Combobox(root, textvariable=format_var, values=["mp3", "flac", "aac"]).place(x=250, y=165)
 
 
-# Directorio de salida (puedes modificarlo)
+# Directorio de salida (se tiene que modificar)
 output_dir = "Descargas"
 
 # Función para descargar el video de YouTube
@@ -64,6 +64,6 @@ def converter():
 
 # Botones para descargar y convertir
 download_btn = Button(root, text='DESCARGAR', font='arial 15 bold', bg='pale violet red', padx=2, command=downloader, fg="blue").place(x=150, y=220)
-convert_btn = Button(root, text='Convertir', font='arial 15 bold', bg='pale violet red', padx=2, command=converter, fg="blue").place(x=150, y=300)
+#convert_btn = Button(root, text='Convertir', font='arial 15 bold', bg='pale violet red', padx=2, command=converter, fg="blue").place(x=150, y=300)
 
 root.mainloop()
